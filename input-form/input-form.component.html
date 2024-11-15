@@ -1,83 +1,101 @@
 <div class="container mt-4">
-    <div class="row">
+  
+    <form [formGroup]="form">
+      <div class="row">
         <div class="col-md-3">
+          <!-- Active State -->
+          <div class="form-group mb-4 input-field">
+            <cod-textbox
+              [id]="'activeInput_1'"
+              [placeholder]="'Enter Value'"
+              [isRequired]="false"
+              [isDisabled]="false"
+              [errorMessage]="''"
+              [value]="''"
+              [name]="'activeInput_1'"
+              [pattern]="''"
+            >
+            </cod-textbox>
+          </div>
+  
+          <!-- Disabled State -->
+          <div class="form-group mb-4 input-field">
+            <cod-textbox
+              [id]="'activeInput_2'"
+              [placeholder]="'Enter Value'"
+              [isRequired]="false"
+              [isDisabled]="true"
+              [errorMessage]="''"
+              [value]="''"
+              [name]="'activeInput_2'"
+              [pattern]="''"
+            >
+            </cod-textbox>
+          </div>
 
-        <!-- Active State -->
-        <div class="form-group mb-4 input-field">
-        <label for="activeInput" class="form-label">ACTIVE</label>
-        <input
-            type="text"
-            class="form-control"
-            id="activeInput"
-            placeholder="Enter Value"
-        />
-        </div>
-    
-        <!-- Disabled State -->
-        <div class="form-group mb-4 input-field">
-        <label for="disabledInput" class="form-label">DISABLED</label>
-        <input
-            type="text"
-            class="form-control"
-            id="disabledInput"
-            placeholder="Enter Value"
-            disabled
-        />
-        </div>
-    
-        <!-- Ghost State -->
-        <div class="form-group mb-4 input-field">
-        <label for="ghostInput" class="form-label">GHOST</label>
-        <input
-            type="text"
-            class="form-control"
-            id="ghostInput"
-            placeholder="Enter Value"
-        />
-        </div>
-    
-        <!-- Error State -->
-        <div class="form-group mb-4 input-field">
-        <label for="errorInput" class="form-label">ERROR</label>
-        <input
-            type="text"
-            class="form-control is-invalid"
-            id="errorInput"
-            placeholder="Enter Value"
-        />
-        </div>
-    
-        <!-- Error with Messaging -->
-        <div class="form-group mb-4 input-field">
-        <label for="errorWithMessageInput" class="form-label">ERROR WITH MESSAGING</label>
-        <input
-            type="text"
-            class="form-control is-invalid"
-            id="errorWithMessageInput"
-            placeholder="Enter Value"
-        />
-        <div class="invalid-feedback">
-            This is an example validation error.
-        </div>
-        </div>
-    
-        <!-- Error with Heading -->
-        <div class="form-group mb-4 input-field">
-        <label for="errorWithHeadingInput" class="form-label">
-            <strong>Input Field Heading Style *</strong>
-        </label>
-        <input
-            type="text"
-            class="form-control is-invalid"
-            id="errorWithHeadingInput"
-            placeholder="Enter Value"
-        />
-        <div class="invalid-feedback">
-            This is an example validation error.
-        </div>
-        </div>
+  
+          <!-- Ghost State -->
+          <div class="form-group mb-4 input-field">
+            <cod-textbox
+              [id]="'activeInput_3'"
+              [placeholder]="'Enter Value'"
+              [isRequired]="false"
+              [isDisabled]="false"
+              [errorMessage]="''"
+              [value]="''"
+              [name]="'activeInput_3'"
+              [pattern]="''"
+            >
+            </cod-textbox>
+          </div>
+  
+          <!-- Error State -->
+          <div class="form-group mb-4 input-field">
+            <cod-textbox
+              [id]="'activeInput_4'"
+              [placeholder]="'Enter Value'"
+              [isRequired]="false"
+              [isDisabled]="false"
+              [errorMessage]="''"
+              [value]="''"
+              [name]="'activeInput_4'"
+              [pattern]="''"
+            >
+            </cod-textbox>
+          </div>
+  
+          <!-- Error with Messaging -->
+          <div class="form-group mb-4 input-field">
+            <cod-textbox
+              [id]="'activeInput_5'"
+              [placeholder]="'Enter Value'"
+              [isRequired]="true"
+              [isDisabled]="false"
+              [errorMessage]="'This is an example validation error'"
+              [value]="''"
+              [name]="'activeInput_5'"
+              [pattern]="''"
+            >
+            </cod-textbox>
+          </div>
+  
+          <!-- Error with Heading -->
+          <div class="form-group mb-4 input-field">
+            <cod-textbox
+              [id]="'activeInput_6'"
+              [placeholder]="''"
+              [isRequired]="true"
+              [isDisabled]="false"
+              [errorMessage]="'This is an example validation error'"
+              [value]="''"
+              [name]="'activeInput_6'"
+              [pattern]="'[A-Za-z]{3}'"
+            >
+            </cod-textbox>
+          </div>
 
+        </div>
       </div>
-   </div>
-</div>
+    </form>
+  </div>
   
